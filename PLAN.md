@@ -34,3 +34,37 @@
 - GitHub CLI authentication
 - nginx
 - certbot for later HTTPS enablement
+
+## 2026-04-30 Standalone No-Wix Rebuild
+
+### What Will Be Built
+
+- A standalone static home page with no Wix runtime dependency
+- Local-only image usage for all visible page media
+- Lightweight self-hosted motion and mobile navigation behavior
+
+### Architecture
+
+- Single `index.html` file with inline CSS and JavaScript
+- Local assets loaded from `assets/`
+- nginx serves only local project files from `/var/www/ktulu.mmds.dev`
+
+### Steps
+
+1. Capture the current public page structure, copy, and assets
+2. Rebuild the page layout manually in standalone HTML/CSS
+3. Recreate core motion with small local JavaScript
+4. Verify no Wix or other upstream runtime URLs remain
+5. Deploy the standalone file to `/var/www/ktulu.mmds.dev`
+6. Validate locally and push to GitHub
+
+### Risks
+
+- Visual differences from the Wix-rendered source can remain
+- Some hidden Wix-only interactions will be intentionally dropped
+
+### Dependencies
+
+- Existing local image assets
+- GitHub CLI authentication
+- nginx

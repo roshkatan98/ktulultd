@@ -5,8 +5,8 @@
 ```text
 Browser
   -> index.html
-     -> inline Wix viewer model
-     -> Wix runtime scripts from Wix CDNs
+     -> inline CSS
+     -> inline JavaScript
      -> local assets/ images
      -> mailto CTA
 ```

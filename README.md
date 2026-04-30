@@ -1,22 +1,21 @@
 # Ktulu LTD Clone
 
-Static mirror of `https://www.ktulultd.com/` prepared for deployment on `ktulu.mmds.dev`.
+Standalone static rebuild of `https://www.ktulultd.com/` prepared for deployment on `ktulu.mmds.dev`.
 
 ## Existing Features
 
-- Static HTML clone of the current Wix-rendered home page
+- Standalone home page with no Wix runtime dependency
 - Local copies of the visible home-page image assets
-- Runtime patching so the page derives its active origin from the current host
+- Inline CSS and JavaScript for layout, motion, and mobile navigation
 
 ## Planned Features
 
-- DNS activation for `ktulu.mmds.dev`
-- TLS certificate issuance after DNS is live
-- Optional deeper de-Wix rebuild if a fully independent site is needed
+- Optional expansion into additional standalone pages
+- Optional contact form implementation behind a local backend endpoint
 
 ## Local Structure
 
-- `index.html`: mirrored site entry point
+- `index.html`: standalone site entry point
 - `assets/`: local image assets referenced by the home page
 
 ## Deployment
