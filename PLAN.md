@@ -68,3 +68,33 @@
 - Existing local image assets
 - GitHub CLI authentication
 - nginx
+
+## 2026-04-30 Motion And Media Polish
+
+### What Will Be Built
+
+- A richer standalone presentation using more of the local image set
+- Scroll-triggered entrance animations for text and media
+- Subtle continuous motion on hero and section imagery
+
+### Architecture
+
+- Existing standalone `index.html`
+- Additional CSS keyframes, hover states, and intersection-observer-based class toggling
+
+### Steps
+
+1. Add layered image treatments where the page feels too sparse
+2. Reintroduce entrance motion with safe reduced-motion fallback
+3. Improve card and logo interaction states
+4. Validate the page on mobile and desktop before deployment
+
+### Risks
+
+- Motion can become distracting if too aggressive
+- Observer timing can accidentally hide content if not tested
+
+### Dependencies
+
+- Existing local image assets
+- Browser support for IntersectionObserver with fallback

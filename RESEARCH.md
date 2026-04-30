@@ -29,6 +29,31 @@ Use the exact mirrored HTML, localize visible image assets, patch the runtime or
 
 - None
 
+## 2026-04-30 Motion And Media Polish
+
+### Problem
+
+The standalone rebuild worked reliably, but it felt flatter than the original and did not surface all of the available imagery strongly enough.
+
+### Options
+
+- Keep the minimal static composition
+- Add layered media, hover motion, and scroll-triggered entrance animations
+
+### Trade-offs
+
+- Minimal presentation is stable but visually underpowered
+- Extra motion improves perceived quality, but must stay restrained to avoid looking noisy or breaking mobile usability
+
+### Risks
+
+- Over-animation can reduce readability or feel unprofessional
+- Scroll-triggered reveals can hide content if implemented poorly
+
+### Decision
+
+Add layered image composition, subtle continuous image drift, card hover motion, and controlled intersection-based reveal animations with reduced-motion fallback.
+
 ## 2026-04-30 Standalone No-Wix Rebuild
 
 ### Problem
